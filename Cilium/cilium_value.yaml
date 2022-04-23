@@ -17,3 +17,11 @@ hubble:
   enabled: true
   relay:
     enabled: true
+  ui:
+    enabled: true
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: nginx
+      hosts:
+        - hubble-ui.127.0.0.1.nip.io
